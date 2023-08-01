@@ -13,7 +13,7 @@
   <p align="center">
     Weather application used to show forecast from OpenWeather API.
     <br />
-    <a href="https://artis-dev.github.io/weather-app/"><strong>View Demo</strong></a>
+    <a href= "https://y-elv.github.io/weather-App/"><strong>View Demo</strong></a>
   </p>
 </div>
 
@@ -75,7 +75,7 @@ You will need `Node.js` and `npm` installed globally on your machine.
 1. Get a free API key at [https://openweathermap.com](https://openweathermap.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/Artis-Dev/weather-app.git
+   git clone https://github.com/Y-elv/weather-App.git
    ```
 3. Install NPM packages
    ```sh
@@ -123,7 +123,7 @@ You will need `Node.js` and `npm` installed globally on your machine.
 <!-- AUTHORS -->
 ## Authors
 
-[ArtisDev]((https://github.com/artis-dev)) - [LinkedIn](https://linkedin.com/in/ArtisDev) - artguk@protonmail.com
+[Y-elv]((https://github.com/Y-elv)) - [LinkedIn](https://www.linkedin.com/in/elvis-mugisha-331b6b16b/) - Mugishaelvis456@gmail.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -136,4 +136,4 @@ You will need `Node.js` and `npm` installed globally on your machine.
 * [CSS-Tricks](https://css-tricks.com/)
 * [DuckDuckGo](https://duckduckgo.com/)
 
-<p align="right">(<a href="#top">back to top  https://artis-dev.github.io/weather-app/</a>)</p>
+<p align="right">(<a href="#top">back to top  https://Y-elv.github.io/weather-app/</a>)</p>
