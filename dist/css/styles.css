@@ -68,6 +68,7 @@ body {
 .search > * {
   background-color: var(--dark-blue);
   height: 40px;
+
   border: none;
   font-size: 18px;
   color: var(--white);
@@ -82,20 +83,22 @@ body {
 
 .search-input {
   font-family: 'Nunito', sans-serif;
-  padding: 4px 0 4px 16px;
+
   width: 256px;
   border-radius: 20px 0 0 20px;
   outline: none;
   border: 2px solid var(--dark-blue);
   border-right: none !important;
-}
 
+}
 .search-submit {
   cursor: pointer;
   width: 52px;
+
   line-height: 1;
   border-radius: 0 20px 20px 0;
   border: 2px solid var(--dark-blue);
+  padding: 11px 0px 0px 0px;
   border-left: none !important;
 }
 
