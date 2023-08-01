@@ -1,7 +1,7 @@
 import { addSeconds, fromUnixTime } from 'date-fns';
 
 const api = (() => {
-  const API_KEY = '6f312f25e2fc403ff0ba94a1ed5fed39';
+  const API_KEY = 'c93fd1817f3fbe42aeac0a63076603b9';
   async function processData(data) {
     const regionNamesInEnglish = new Intl.DisplayNames(['en'], {
       type: 'region',
@@ -78,6 +78,7 @@ const api = (() => {
     const { coord } = locationData;
     try {
       const response = await fetch(
+      // `https://api.tomorrow.io/v4/timelines?location=${coord.lat},${coord.lon}&fields=temperature&timesteps=1h&units=metric&apikey=${API_KEY}`,
         `https://api.openweathermap.org/data/2.5/onecall?lat=${coord.lat}&lon=${coord.lon}&exclude=alerts,minutely&units=${units}&appid=${API_KEY}`,
         { mode: 'cors' },
       );
@@ -91,6 +92,7 @@ const api = (() => {
   async function getLocData(query, units = 'metric') {
     try {
       const response = await fetch(
+        // `https://api.tomorrow.io/v4/timelines?location=${query}&fields=temperature&timesteps=1h&units=metric&apikey=${API_KEY}`,
         `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${API_KEY}`,
         { mode: 'cors' },
       );
@@ -110,4 +112,4 @@ const api = (() => {
   };
 })();
 
-export default api;
+ export default api;

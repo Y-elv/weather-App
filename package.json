@@ -6,19 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start":"",
     "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Artis-Dev/weather-app.git"
+    "url": "git+https://github.com/Y-elv/weather-App.git"
   },
-  "author": "ArtisDev",
+  "author": "Elvis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Artis-Dev/weather-app/issues"
+    "url": "https://github.com/Y-elv/weather-App/issues"
   },
-  "homepage": "https://github.com/Artis-Dev/weather-app#readme",
+  "homepage": "https://github.com/Y-elv/weather-App#readme",
   "devDependencies": {
     "eslint": "^8.24.0",
     "eslint-config-airbnb-base": "^15.0.0",
