@@ -104,44 +104,40 @@ const dom = (() => {
     return { windDesc, roundedSpeed };
   }
 
-  function getMoon(moonPhase) {
-    let moonIcon = '';
-    let moonName = '';
+ function getMoon(moonPhase) {
+  let moonIcon = '';
+  let moonName = '';
 
-    if (moonPhase === 0 || moonPhase === 1) {
-      moonName = 'New Moon';
-      moonIcon = './assets/svg/moon-new.svg';
-    }
-    if (moonPhase === 0.25) {
-      moonName = 'First Quarter Moon';
-      moonIcon = './assets/svg/moon-first-quarter.svg';
-    }
-    if (moonPhase === 0.5) {
-      moonName = 'Full Moon';
-      moonIcon = './assets/svg/moon-full.svg';
-    }
-    if (moonPhase === 0.75) {
-      moonName = 'Last Quarter Moon';
-      moonIcon = './assets/svg/moon-last-quarter.svg';
-    }
-    if (moonPhase > 0 && moonPhase < 0.25) {
-      moonName = 'Waxing Crescent';
-      moonIcon = './assets/svg/moon-waxing-crescent.svg';
-    }
-    if (moonPhase > 0.25 && moonPhase < 0.5) {
-      moonName = 'Waxing Gibbous';
-      moonIcon = './assets/svg/moon-waxing-gibbous.svg';
-    }
-    if (moonPhase > 0.5 && moonPhase < 0.75) {
-      moonName = 'Waning Gibbous';
-      moonIcon = './assets/svg/moon-waning-gibbous.svg';
-    }
-    if (moonPhase > 0.75 && moonPhase < 1) {
-      moonName = 'Waning Crescent';
-      moonIcon = './assets/svg/moon-waning-crescent.svg';
-    }
-    return { moonName, moonIcon };
+  if (moonPhase === 0.25) {
+    moonName = 'First Quarter Moon';
+    moonIcon = './assets/svg/moon-first-quarter.svg';
   }
+  if (moonPhase === 0.5) {
+    moonName = 'Full Moon';
+    moonIcon = './assets/svg/moon-full.svg';
+  }
+  if (moonPhase === 0.75) {
+    moonName = 'Last Quarter Moon';
+    moonIcon = './assets/svg/moon-last-quarter.svg';
+  }
+  if (moonPhase > 0 && moonPhase < 0.25) {
+    moonName = 'Waxing Crescent';
+    moonIcon = './assets/svg/moon-waxing-crescent.svg';
+  }
+  if (moonPhase > 0.25 && moonPhase < 0.5) {
+    moonName = 'Waxing Gibbous';
+    moonIcon = './assets/svg/moon-waxing-gibbous.svg';
+  }
+  if (moonPhase > 0.5 && moonPhase < 0.75) {
+    moonName = 'Waning Gibbous';
+    moonIcon = './assets/svg/moon-waning-gibbous.svg';
+  }
+  if (moonPhase > 0.75 && moonPhase < 1) {
+    moonName = 'Waning Crescent';
+    moonIcon = './assets/svg/moon-waning-crescent.svg';
+  }
+  return { moonName, moonIcon };
+}
 
   function changeUnits(units) {
     const metricButton = document.querySelector('.settings-metric');
